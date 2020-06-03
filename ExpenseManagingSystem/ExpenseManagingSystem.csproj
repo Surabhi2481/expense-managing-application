@@ -192,6 +192,7 @@
     <Content Include="Views\Main\expenseAdded.cshtml" />
     <Content Include="Views\Main\addExpense.cshtml" />
     <Content Include="Views\Main\expenseList.cshtml" />
+    <Content Include="Views\Main\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

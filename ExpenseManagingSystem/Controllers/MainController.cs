@@ -13,6 +13,11 @@ namespace ExpenseManagingSystem.Controllers
         // GET: Main
 
         private DataContext db = new DataContext();
+
+        public ActionResult Home()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View(db.mainClasss.ToList());

@@ -1,0 +1,33 @@
+﻿@model ExpenseManagingSystem.Models.mainClass
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Welcome to Expense Managament System.</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+
+        <p>
+            @Html.ActionLink("Login", "Login")
+
+
+        </p>
+        <p>
+
+            @Html.ActionLink("Register", "Register")
+        </p>
+
+
+    </div>
+}
