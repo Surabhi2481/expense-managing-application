@@ -16,4 +16,5 @@ namespace ExpenseManagingSystem.Models
 
         public DbSet<Expense> Expenses { get; set; }
     }
+
 }

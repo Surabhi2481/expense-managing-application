@@ -80,12 +80,12 @@ namespace ExpenseManagingSystem.Models
 
 
         [Required]
-        [Display(Name = "Expense Name")]
+        [Display(Name = "Expense Type")]
         public Type expenseType { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        [Display(Name = "Display Date")]
+        [Display(Name = "Expense Date")]
         public DateTime? expenseDate { get; set; }
 
         [Required]

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ExpenseManagingSystem.Models.Expense>
+
+@{
+    ViewBag.Title = "expenseList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Expense List</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.foreignId.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.expenseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.expenseType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.expenseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.foreignId.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.expenseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.expenseType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.expenseDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.expenseId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.expenseId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.expenseId })
+        </td>
+    </tr>
+}
+
+</table>
