@@ -95,13 +95,7 @@ namespace ExpenseManagingSystem.Controllers
                 if (obj != null)
                 {
                     Session["userid"] = obj.userId;
-                    /*if (obj.categoryId == categ.user)
-                        return RedirectToAction("userProductList");
-                    else if (obj.categoryId == categ.vendor)
-                        return RedirectToAction("vendorLoginCheck");
-                    else
-                        return RedirectToAction("admin");*/
-                    return RedirectToAction("expenseList"); ;
+                    return RedirectToAction("userExpenseList"); ;
                 }
             }
             return View(real);
@@ -109,7 +103,12 @@ namespace ExpenseManagingSystem.Controllers
 
         public ActionResult userExpenseList()
         {
-            var a = (from d in db.Expenses select d).ToList();
+            
+
+            string id = Session["userid"].ToString();
+            var a = (from d in db.Expenses
+                      where d.userId == id
+                      select d).ToList();
             return View(a);
         }
 
