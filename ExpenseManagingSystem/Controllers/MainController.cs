@@ -112,6 +112,37 @@ namespace ExpenseManagingSystem.Controllers
             return View(a);
         }
 
+        public ActionResult editProduct(String id)
+        {
+            return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
+        }
+        [HttpPost]
+        public ActionResult editProduct(String id, Expense e)
+        {
+            db.Entry(e).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("expenseList");
+        }
+
+
+        public ActionResult productDetails(String id)
+        {
+            return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
+        }
+
+        public ActionResult deleteProduct(String id)
+        {
+            return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
+        }
+
+        [HttpPost]
+        public ActionResult deleteProduct(String id, Expense e)
+        {
+            Expense p1 = db.Expenses.Where(x => x.expenseId == id).FirstOrDefault();
+            db.Expenses.Remove(p1);
+            db.SaveChanges();
+            return RedirectToAction("expenseList");
+        }
 
     }
 }
