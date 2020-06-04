@@ -195,6 +195,9 @@
     <Content Include="Views\Main\Home.cshtml" />
     <Content Include="Views\Main\Login.cshtml" />
     <Content Include="Views\Main\userExpenseList.cshtml" />
+    <Content Include="Views\Main\editExpense.cshtml" />
+    <Content Include="Views\Main\expenseDetails.cshtml" />
+    <Content Include="Views\Main\deleteExpense.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

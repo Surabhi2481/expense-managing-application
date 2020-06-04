@@ -112,12 +112,12 @@ namespace ExpenseManagingSystem.Controllers
             return View(a);
         }
 
-        public ActionResult editProduct(String id)
+        public ActionResult editExpense(String id)
         {
             return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
         }
         [HttpPost]
-        public ActionResult editProduct(String id, Expense e)
+        public ActionResult editExpense(String id, Expense e)
         {
             db.Entry(e).State = EntityState.Modified;
             db.SaveChanges();
@@ -125,18 +125,18 @@ namespace ExpenseManagingSystem.Controllers
         }
 
 
-        public ActionResult productDetails(String id)
+        public ActionResult expenseDetails(String id)
         {
             return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
         }
 
-        public ActionResult deleteProduct(String id)
+        public ActionResult deleteExpense(String id)
         {
             return View(db.Expenses.Where(x => x.expenseId == id).FirstOrDefault());
         }
 
         [HttpPost]
-        public ActionResult deleteProduct(String id, Expense e)
+        public ActionResult deleteExpense(String id, Expense e)
         {
             Expense p1 = db.Expenses.Where(x => x.expenseId == id).FirstOrDefault();
             db.Expenses.Remove(p1);

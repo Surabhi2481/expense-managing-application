@@ -1,0 +1,59 @@
+﻿@model ExpenseManagingSystem.Models.Expense
+
+@{
+    ViewBag.Title = "expenseDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>expenseDetails</h2>
+
+<div>
+    <h4>Expense</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.foreignId.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foreignId.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.expenseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

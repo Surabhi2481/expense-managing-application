@@ -1,0 +1,65 @@
+﻿@model ExpenseManagingSystem.Models.Expense
+
+@{
+    ViewBag.Title = "deleteExpense";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>deleteExpense</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Expense</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.foreignId.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foreignId.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expenseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expenseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
