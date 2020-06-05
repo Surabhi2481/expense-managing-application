@@ -5,11 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>userExpenseList</h2>
+<h2>Your Expense List is here.</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -56,3 +54,7 @@
 }
 
 </table>
+<br />
+<p>
+    @Html.ActionLink("Add New Expense", "addExpense")
+</p>

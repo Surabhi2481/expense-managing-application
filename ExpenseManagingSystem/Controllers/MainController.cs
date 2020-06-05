@@ -60,7 +60,7 @@ namespace ExpenseManagingSystem.Controllers
             {
                 db.Expenses.Add(expense);
                 db.SaveChanges();
-                return RedirectToAction("expenseList");
+                return RedirectToAction("userExpenseList");
             }
             return View();
         }
@@ -121,7 +121,7 @@ namespace ExpenseManagingSystem.Controllers
         {
             db.Entry(e).State = EntityState.Modified;
             db.SaveChanges();
-            return RedirectToAction("expenseList");
+            return RedirectToAction("userExpenseList");
         }
 
 
