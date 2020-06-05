@@ -146,6 +146,22 @@
     <Compile Include="Migrations\202006030924595_updatedDataAnnotations.designer.cs">
       <DependentUpon>202006030924595_updatedDataAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006050949552_classUpdated.cs" />
+    <Compile Include="Migrations\202006050949552_classUpdated.designer.cs">
+      <DependentUpon>202006050949552_classUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006051038535_classUpdated01.cs" />
+    <Compile Include="Migrations\202006051038535_classUpdated01.designer.cs">
+      <DependentUpon>202006051038535_classUpdated01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006051044143_classUpdated02.cs" />
+    <Compile Include="Migrations\202006051044143_classUpdated02.designer.cs">
+      <DependentUpon>202006051044143_classUpdated02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006051109139_classUpdated03.cs" />
+    <Compile Include="Migrations\202006051109139_classUpdated03.designer.cs">
+      <DependentUpon>202006051109139_classUpdated03.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\mainClass.cs" />
@@ -221,6 +237,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006030924595_updatedDataAnnotations.resx">
       <DependentUpon>202006030924595_updatedDataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006050949552_classUpdated.resx">
+      <DependentUpon>202006050949552_classUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006051038535_classUpdated01.resx">
+      <DependentUpon>202006051038535_classUpdated01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006051044143_classUpdated02.resx">
+      <DependentUpon>202006051044143_classUpdated02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006051109139_classUpdated03.resx">
+      <DependentUpon>202006051109139_classUpdated03.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

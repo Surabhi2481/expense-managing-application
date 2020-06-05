@@ -48,9 +48,9 @@
             @Html.DisplayFor(modelItem => item.amount)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.expenseId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.expenseId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.expenseId })
+            @Html.ActionLink("Edit", "editExpense", new { id=item.expenseId }) |
+            @Html.ActionLink("Details", "expenseDetails", new { id=item.expenseId }) |
+            @Html.ActionLink("Delete", "deleteExpense", new { id=item.expenseId })
         </td>
     </tr>
 }

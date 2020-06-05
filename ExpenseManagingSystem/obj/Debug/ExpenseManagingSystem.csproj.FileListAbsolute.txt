@@ -88,3 +88,7 @@ C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\bin\xunit.a
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\bin\xunit.core.dll
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\bin\xunit.abstractions.xml
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\bin\xunit.core.xml
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated.resources
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated01.resources
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated02.resources
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated03.resources

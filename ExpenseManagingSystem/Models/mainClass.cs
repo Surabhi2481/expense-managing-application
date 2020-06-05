@@ -86,7 +86,7 @@ namespace ExpenseManagingSystem.Models
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Expense Date")]
-        public DateTime? expenseDate { get; set; }
+        public String expenseDate { get; set; }
 
         [Required]
         [DataType(DataType.Currency)]
