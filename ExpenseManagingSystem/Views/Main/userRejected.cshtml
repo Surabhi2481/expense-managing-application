@@ -1,0 +1,12 @@
+﻿@model ExpenseManagingSystem.Models.mainClass
+
+@{
+    ViewBag.Title = "userRejected";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User Rejected due to wrong credentials.</h2>
+
+<br />
+<br />
+@Html.ActionLink("Try to Login Again", "Login")

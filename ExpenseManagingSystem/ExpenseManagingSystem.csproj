@@ -162,6 +162,14 @@
     <Compile Include="Migrations\202006051109139_classUpdated03.designer.cs">
       <DependentUpon>202006051109139_classUpdated03.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006060908378_addedDataAnnotations.cs" />
+    <Compile Include="Migrations\202006060908378_addedDataAnnotations.designer.cs">
+      <DependentUpon>202006060908378_addedDataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006060952337_modifiedPhoneNumberErrorMessage.cs" />
+    <Compile Include="Migrations\202006060952337_modifiedPhoneNumberErrorMessage.designer.cs">
+      <DependentUpon>202006060952337_modifiedPhoneNumberErrorMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\mainClass.cs" />
@@ -201,7 +209,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Main\Register.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
@@ -214,6 +221,7 @@
     <Content Include="Views\Main\editExpense.cshtml" />
     <Content Include="Views\Main\expenseDetails.cshtml" />
     <Content Include="Views\Main\deleteExpense.cshtml" />
+    <Content Include="Views\Main\userRejected.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,6 +257,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006051109139_classUpdated03.resx">
       <DependentUpon>202006051109139_classUpdated03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006060908378_addedDataAnnotations.resx">
+      <DependentUpon>202006060908378_addedDataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006060952337_modifiedPhoneNumberErrorMessage.resx">
+      <DependentUpon>202006060952337_modifiedPhoneNumberErrorMessage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

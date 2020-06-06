@@ -92,3 +92,5 @@ C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\E
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated01.resources
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated02.resources
 C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.classUpdated03.resources
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.addedDataAnnotations.resources
+C:\Users\HP\source\repos\ExpenseManagingSystem\ExpenseManagingSystem\obj\Debug\ExpenseManagingSystem.Migrations.modifiedPhoneNumberErrorMessage.resources

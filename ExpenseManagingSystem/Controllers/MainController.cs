@@ -40,7 +40,7 @@ namespace ExpenseManagingSystem.Controllers
             {
                 db.mainClasss.Add(user);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
             else
             {
@@ -89,7 +89,7 @@ namespace ExpenseManagingSystem.Controllers
             {
                 mainClass obj = db.mainClasss.FirstOrDefault(user => user.userId == real.userId && user.password == real.password);
                 if (obj == null)
-                    return View("vendorRejected");
+                    return View("userRejected");
 
 
                 if (obj != null)
@@ -102,8 +102,7 @@ namespace ExpenseManagingSystem.Controllers
         }
 
         public ActionResult userExpenseList()
-        {
-            
+        {          
 
             string id = Session["userid"].ToString();
             var a = (from d in db.Expenses
@@ -136,12 +135,12 @@ namespace ExpenseManagingSystem.Controllers
         }
 
         [HttpPost]
-        public ActionResult deleteExpense(String id, Expense e)
+        public ActionResult deleteExpense(String id,Expense e)
         {
             Expense p1 = db.Expenses.Where(x => x.expenseId == id).FirstOrDefault();
             db.Expenses.Remove(p1);
             db.SaveChanges();
-            return RedirectToAction("expenseList");
+            return RedirectToAction("userExpenseList");
         }
 
     }

@@ -33,7 +33,8 @@ namespace ExpenseManagingSystem.Models
         public String userId { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
+        [Display(Name = "User Name")]
+        [StringLength(50, MinimumLength = 4)]
         public String name { get; set; }
 
         [Display(Name = "Date of birth")]
@@ -44,7 +45,7 @@ namespace ExpenseManagingSystem.Models
         [Display(Name = "Gender")]
         public Gender gender { get; set; }
 
-        [Required(ErrorMessage = "Email ID is required")]
+        [Required(ErrorMessage = "Phone Number is required")]
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Contact Number")]
         public String phone { get; set; }
@@ -58,6 +59,8 @@ namespace ExpenseManagingSystem.Models
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$&])\S{6,20}$",
+            ErrorMessage = "Minimum length should be 6 containing alphabets, digits, special characters (All Included)")]
         public String password { get; set; }
     }
 
@@ -76,6 +79,7 @@ namespace ExpenseManagingSystem.Models
 
         [Required]
         [Display(Name = "Expense Name")]
+        [StringLength(25, MinimumLength = 3)]
         public String expenseName { get; set; }
 
 
